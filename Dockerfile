@@ -52,7 +52,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV PATH $PATH:$JAVA_HOME/bin
 
 # hadoop binary download
-ENV HADOOP_VERSION 2.7.2
+ENV HADOOP_VERSION 2.7.5
 RUN curl -s http://www.us.apache.org/dist/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s ./hadoop-${HADOOP_VERSION} hadoop
 
